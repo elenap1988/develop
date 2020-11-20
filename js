@@ -1,36 +1,20 @@
-// Задача 1
 
 
-// function sayHello(name){
-    
-//     if (name =='Mark'){
-//          document.write('Hi, ' + 'Mark');
-//     }
-//     else{
-//         document.write('Hello, ' + name);
-//     }
+function getFloor(floor){
+	
+	if (floor >= 14){
+		document.write(floor);
+	}
+	else if (floor >= 0){
+		document.write(floor + 1);
+	}
 
-// }
-// sayHello('Mark');
-
- 
-// function getNum(a,b){
-//   if (a < b)
-//   {for (let i = a; i <= b; i++){
-//     document.write(i);
-//   }
-//   }
-//   else{
-//     for (let i = a; i >= b; i--){
-//       document.write(i);
-//     }
-//   }
-// }
-// getNum(6,19);
-
-
-
-
+	else if (floor < 0){
+		document.write(floor);
+	}
+	
+}
+getFloor(12);
 
 
 
