@@ -1,4 +1,4 @@
-Task 6
+//Task 6
 	let num1 = prompt('number1');
 	let operation = prompt('operation');
 	let num2 = prompt('number2');
