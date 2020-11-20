@@ -1,55 +1,50 @@
-//Task 6
-	let num1 = prompt('number1');
-	let operation = prompt('operation');
-	let num2 = prompt('number2');
-
-
-function doOperation(){
-	if (operation =='+'){
-		const plus = function(){
-			let result = Number(num1) + Number(num2);
-			alert(result);
+//task 5
+	function convertType1(value,toType){
+		switch(toType){
+			case 'boolean':
+				return Boolean(value);
+				break;
+			case'string':	
+				return String(value);
+				break;
+			case'number':	
+				return Number(value);
+				break;	
 		}
-		plus();
-	}
-	
-	else if (operation == '-'){
-		const minus = function(){
-			let result = Number(num1) - Number(num2);
- 	alert(result);
-		}
-		minus();
 	}
 
+	console.log(convertType1('my string','boolean'));
 
-	else if (operation == '/'){
-		const divide = function(){
-			let result = Number(num1) / Number(num2);
-			alert(result);	
+
+	const convertType2 = function(value,toType){
+		switch(toType){
+			case 'boolean':
+				return Boolean(value);
+				break;
+			case'string':	
+				return String(value);
+				break;
+			case'number':	
+				return Number(value);
+				break;	
 		}
-		divide();
 	}
 
-	else if (operation == '*'){
-		const multiply = function(){
-		let result = Number(num1) * Number(num2);
-		alert(result);	
+	console.log(convertType2('my string','boolean'));
+
+
+	const convertType3 = (value,toType) =>{
+		switch(toType){
+			case 'boolean':
+				return Boolean(value);
+				break;
+			case'string':	
+				return String(value);
+				break;
+			case'number':	
+				return Number(value);
+				break;	
 		}
-		multiply();
 	}
-}
-doOperation();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+	console.log(convertType3('my string','boolean'));
