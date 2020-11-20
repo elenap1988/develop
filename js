@@ -7,16 +7,16 @@
 function doOperation(){
 	if (operation =='+'){
 		const plus = function(){
-			let result1 = Number(num1) + Number(num2);
-			alert(result1);
+			let result = Number(num1) + Number(num2);
+			alert(result);
 		}
 		plus();
 	}
 	
 	else if (operation == '-'){
 		const minus = function(){
-			let result2 = Number(num1) - Number(num2);
- 	alert(result2);
+			let result = Number(num1) - Number(num2);
+ 	alert(result);
 		}
 		minus();
 	}
@@ -24,21 +24,29 @@ function doOperation(){
 
 	else if (operation == '/'){
 		const divide = function(){
-			let result3 = Number(num1) / Number(num2);
-			alert(result3);	
+			let result = Number(num1) / Number(num2);
+			alert(result);	
 		}
 		divide();
 	}
 
 	else if (operation == '*'){
 		const multiply = function(){
-		let result4 = Number(num1) * Number(num2);
-		alert(result4);	
+		let result = Number(num1) * Number(num2);
+		alert(result);	
 		}
 		multiply();
 	}
 }
 doOperation();
+
+
+
+
+
+
+
+
 
 
 
