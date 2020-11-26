@@ -100,8 +100,13 @@
 // 	if(newArr[i]) count++;
 // }
 // console.log(count);
+//
+//Task 9
 
-
+//let newData = data.filter(function(item,index){
+//	return data.indexOf(item) === index;
+//})
+//document.write(newData);
 
 
 
