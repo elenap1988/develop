@@ -99,14 +99,63 @@
 // for(let i = 0; i < newArr.length; i++){
 // 	if(newArr[i]) count++;
 // }
-// console.log(count);
-//
-//Task 9
+//  let runArr = [];
+//  runArr.push(count);
+//  console.log(runArr);
 
-//let newData = data.filter(function(item,index){
-//	return data.indexOf(item) === index;
-//})
-//document.write(newData);
+// task 9
+
+// const data = [1,2,1,2,3];
+// let newData = data.filter(function(item,index){
+// 	return data.indexOf(item) === index;
+// })
+// document.write(newData);
+
+//task 11
+
+// const arr1 = [1,2];
+// const arr2 = [2,3];
+
+// const arr3 = ['a', 'b'];
+// const arr4 = ['b', 'c'];
+// const arr5 = ['b', 'e', 'c'];
+
+// const arr6 = ['b', 'b', 'e'];
+// const arr7 = ['b', 'c', 'e'];
+// const arr8 = ['b', 'e', 'c'];
+
+// // arr1 arr2 [2];
+// // arr3 arr4 arr5 ['b'];
+// // arr7 arr8 ['b' 'e'];
+
+
+// let newArr = arr6.concat(arr7,arr8);
+// 	console.log(newArr);
+
+// let simbol = newArr.filter(function(item,index){
+// 	return newArr.indexOf(item) !== index;
+// });
+
+// 	console.log(simbol);	
+
+// let simbol1 = simbol.filter(function(item,index){
+// 	return simbol.indexOf(item) !== (index);
+// })
+// console.log(simbol1);	
+
+//Moжно и дальше повторять. Как зацтклить filter и записать в функцию?
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
