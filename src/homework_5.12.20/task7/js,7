@@ -1,0 +1,54 @@
+let text = document.querySelector('#text');
+text.onkeypress = function(event){
+	if(event.keyCode < 48 || event.keyCode < 57){
+		return false
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
