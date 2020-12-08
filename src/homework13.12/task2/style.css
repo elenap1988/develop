@@ -34,27 +34,19 @@ body{
 	flex-direction: column;
 	justify-content: space-between;
 }
-.error{
-	width: 300px;
-	height: 70px;
-	margin: 0 auto;
-	background: red;
-	color: #fff;
-	font-size: 30px;
-	text-align: center;
-	display: none;
-	
-	
-}
-#div{
+
+/*div{
 	width: 300px;
 	height: 70px;
 	margin: 0 auto;
 	background: #fff;
-	display: none;
+	position: absolute;
+	top: 0; left: 0;
+	right: 0; bottom: 0;
+	display: block;
 	
 }
-
+*/
 
 
 

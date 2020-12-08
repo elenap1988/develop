@@ -5,8 +5,7 @@ let close = document.querySelector('#close');
 let age = document.querySelector('#age');
 let name = document.querySelector('#name');
 let add = document.querySelector('#add');
-let error = document.querySelector('#error');
-let div = document.querySelector('#div');
+// let div = document.querySelector('#div');
 
 age.onkeypress = function(event){
 	if(event.keyCode < 48 || event.keyCode > 57){
@@ -21,12 +20,14 @@ close.onclick = function(){
 }
 add.onclick = function(){
 	if(age.value < 18 || null){
-		error.style.display = 'block';	
+		alert('ERROR!')
 	}
 	else{
-		div.style.display = 'block';
-		div.innerHTML = age.value;
-		div.innerHTML = name.value;	
+		alert('NAME:name.value' age.value);
+		
+		// div.style.display = 'block';
+		// div.innerHTML += `<li>${age.value}</li>`;
+		// div.innerHTML += name.value;	
 	}
 }
 	
