@@ -5,7 +5,7 @@ let close = document.querySelector('#close');
 let age = document.querySelector('#age');
 let name = document.querySelector('#name');
 let add = document.querySelector('#add');
-// let div = document.querySelector('#div');
+let div = document.querySelector('#div');
 
 age.onkeypress = function(event){
 	if(event.keyCode < 48 || event.keyCode > 57){
@@ -18,18 +18,23 @@ button.onclick = function(){
 close.onclick = function(){
 	modal.style.opacity = '0';
 }
-add.onclick = function(){
+add.addEventListener('click', function(){
+	let na = name.value;
+	let ag = age.value;
+
 	if(age.value < 18 || null){
 		alert('ERROR!')
 	}
 	else{
-		alert('NAME:name.value' age.value);
-		
-		// div.style.display = 'block';
-		// div.innerHTML += `<li>${age.value}</li>`;
-		// div.innerHTML += name.value;	
+		alert('Name:' +na);
+		alert('Age:' +ag);
 	}
-}
+	
+})
+	
+	
+
+
 	
 	
 
