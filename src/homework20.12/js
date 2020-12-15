@@ -1,0 +1,73 @@
+//<button id="newnote" class="newnote">+</button>
+//<div id="board" class="board">	
+	//<div class="note">
+		//<div id="text">New text is here</div>
+		//<textarea></textarea>
+	//</div>
+
+//</div>
+
+
+
+let textarea = document.querySelector('textarea');
+
+let button = document.querySelector('#newnote');
+
+let arr = [];
+
+let text = document.querySelector('#text')
+
+function Note (posX, posY, div){
+
+	this.div = div;
+	this.posX = posX + 'px';
+	this.posY = posY + 'px';
+}
+
+button.onclick = function () {
+	textarea.style.display = 'block';
+}
+
+textarea.onkeypress = function(event){
+	if(event.keyCode === 13){
+
+		let div = document.createElement('div');
+
+		const newNote1 = new Note(200, 300, div);
+		console.log(newNote1);
+
+		arr.push(textarea.value);
+		console.log(arr);
+
+		text.style.display = 'none';
+		div.innerHTML = textarea.value;
+		text.before(div);
+		
+		textarea.style.display = 'none';
+		textarea.value = '';
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
